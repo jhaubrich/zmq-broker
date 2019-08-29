@@ -16,7 +16,7 @@ You only do this one time.
 ``` bash
 git clone git@github.com:legendenergy/zmq-controller.git
 cd zmq-controller
-python -m venv .
+python3 -m venv .
 ```
 
 ### activate your virtual environment
@@ -42,6 +42,8 @@ pip install -r requirements.txt
 ``` bash
 # install something
 pip install <whatev>
+# find something
+pip search zmq
 # install everything required by requirements.txt
 pip install -r requirements.txt
 # see what's installed
