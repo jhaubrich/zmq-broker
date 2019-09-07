@@ -7,7 +7,8 @@ if __name__ == "__main__":
     p = ctx.socket(zmq.PUB)
     p.connect("tcp://localhost:5555")
     i = 0
+
     while True:
-        msg = str(randint(0,4095))
+        msg = 'sensor1 ' + str(randint(0,4095))
         p.send(msg.encode('utf-8'))
-        time.sleep(1)
+        time.sleep(.1)
